@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html {
+    background-color: hsl (27, 72%, 72%);
+}
+
+
+body {
+
+    /*  HTML 103   */
+    color: rgb (91, 91, 91);
+    background-color: ivory;
+
+
+    /* HTML 228 Placing Gris Items by Area  */
+    grid-template-areas: "header    header"
+                         "section   section"
+                         "article   article"
+                         "footer    footer";
+
+    display: grid;
+    grid-gap: 20px 60px;
+
+        div#header { 
+            display: grid;
+            grid-row: 1/-1;
+            grid-column: 1/-1;
+
+    }
+        dtv#section {
+            display: grid;
+        }
+        div#article {
+            display: grid;
+            /* grid-template-columns: repeat (auto-fill, minmax (100px, 1fr));*/
+            grid-template-columns: repeat (2, 1fr)
+            grid-gap: 10px 30px;
+        }
+        
+        div#article#item1 {
+             display: grid;
+        }
+
+
+        dtv#footer {
+              display: grid;
+        }
+
+        
+    
+
+
+
+
+    
+nav.horizontalNavigation a {
+    color: rgb(5, 73, 22);
+    background-color: rgb(252, 147, 19);
+    font-family: Champagne, cursive;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+ }  
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+    color: rgb(209, 238, 16);
+   background-color: rgb(36, 15, 195);
+}    
+
+
+}
