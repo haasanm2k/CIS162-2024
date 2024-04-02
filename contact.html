@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      Project 2-3
+
+      SoCal Media Solutions Form
+      Author: Hasan Mohammad
+      Date:03/26/2024
+
+      Filename:   contact.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SoCalMedia Solutions Registration</title>
+    <link href="project2-3.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <header>
+        
+            <img src="socal_logo.png" alt="SoCal Media Solutions" />
+            <nav class="horizontalNavigation">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="network.html">Network</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="gallery.html">Photo Gallery</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+            </nav>
+            
+    </header>
+    
+    <article>
+        <h1>Customer Registration</h1>
+        <p>Thank you for registering with SoCal Media Solutions. You will recieve
+            <ul>
+                <li> <em>Monthly News Letter</em> </li>
+                <li> <em>Security and Tech Update News</em> </li>
+                <li> <em>Occasional white Paper</em> </li>
+            </ul>
+        <p>Fun Stuff- Check your e-mail inbox for contest and rewards. </p>
+        <p>Registartion information are private and confidential. SoCal Media Solutions
+            will not share your contact information with third
+            parties, <em>ever</em>. </p>
+        <p>Required values are marked by an asterisk (*)</p>
+    </article>
+    <section>
+        <!-- Create form -->
+        <!-- HTML Page 523 -->
+        <form id="registration" action="http://www.example.com/socal.media.solutions/registration" method="post">
+
+            <fieldset id="custInfo">
+                <legend>Customer Information</legend>
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    
+                        <input name="custName" id="name" type="text" placeholder="first and last name" required />
+                    
+                </div>
+
+                <div class="formRow">
+                    <label for="street">Street adress </label>
+                    <address>
+                        <input name="custStreet" id="street" type="text" />
+                    </address>
+                </div>
+
+                <div class="formRow">
+                    <label for="city"> City </label>
+                    <input name="custCity" id="city" type="text" value="Ormond Beach" />
+                </div>
+
+                <div class="formRow">
+                    <label for="state">State </label>
+                    <input name="custState" id="state" type="text" value="FL" />
+                </div>
+
+                <div class="formRow">
+                    <label for="zip">Postal code </label>
+                    <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+                   
+
+                    pattern="^\d{5}(-\d{4})?$" />
+
+                     <!--  HTML Page 579 -->
+                    <!-- Create pattern matching with regular expression at above lines -->
+
+                </div>
+
+                <div class="formRow">
+                    <label for="phone">Phone number </label>
+                    <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnnn"
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                    
+                    <!--  HTML Page 579 -->
+                    <!-- Create pattern matching with regular expression at above lines -->
+                    
+                </div>
+
+                <div class="formRow">
+                    <label for="mail">E-mail* </label>
+                    <E-mail>
+                        <input name="custEmail" id="mail" type="email" required />
+                    </E-mail>
+                </div>
+
+                    <div class="formRow">
+                        <label for="info">Where did you hear about us? <br /> (select all that apply) </label>
+                        <select name="infoSrc" id="info" size="5" multiple>
+                            <option value="internet"> Internet </option>
+                            <option value="mag"> Magazine </option>
+                            <option value="news"> Newspaper </option>
+                            <option value="word"> Word of Mouth</option>
+                            <option value="other"> Other </option>
+                        </select>
+
+                        
+                    </div>
+
+                    <!--div class="formRow">
+                        <label for="dish"> What's your favorite dish? </label>
+                        <input name="favDish" id="dish" type="text" list="dishType" />
+                        <datalist id="dishType">
+                            <option value="Anitpasto Pizza">
+                            <option value="Big Kahuna Pizza"> 
+                            <option value="BBQ Chicken Pizza">
+                            <option value="Mediterranean Herb Pizza">
+                            <option value="Pasta Rolls">
+                            <option value="Pasto Artichoke Pizza" >
+                        </datalist>
+                    </div-->
+
+                    <!-- HTML Page 565 Section 7.3 -->
+                    <!-- Create spinner control for dineOut field-->
+
+                    <div class="formRow">
+                        <label for="dineSpin"> How many times do you visit this site per month? </label>
+                        <input name="dineOut" id="dineSpin" type="number"
+                        value="1" step="1" min="0" max="20"/> 
+                    </div>
+                    
+                    <!--  HTML Page 557 Section 7.2 -->
+                    <!-- Creating Check Boxes -->
+
+                    <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                    <label for="mailCB" > Add me to your mailing list for monthly 
+                                          news letter, tech/security upgrade notification, 
+                                          fun stuff, coupons/discounts </label>
+                       
+                    
+            </fieldset>
+
+
+
+
+            <fieldset id="expInfo">
+                <legend>Your experience with SoCal Media Solutions </legend>
+
+                
+
+               
+
+                <div class="fromRow">
+                    <label for="visit"> Date of visit</label>
+                    <input name="visitDate" id="visit" type="date" />
+
+                </div>
+
+                <div class="formRow">
+                    <label for="order">Reason for visit this site</label>
+                    <select name="orderType" id="order">
+                        <option value="order1"> On Line Purchase</option>
+                        <option value="order2"> On Line Support</option>
+                        <option value="order3"> White Paper</option>
+                        <option value="order4"> Appointments</option>
+                    </select>
+
+               
+
+                </div>
+
+
+                <!-- HTML 554  Section 7.2 -->
+                <!-- Create option buttons  -->
+
+                <div class="formRow">
+                    <label>Are you satisfied with ON LINE support?</label>
+                    <fieldset class="optGroup">
+                        <label for="fYes">Yes</label>
+                        <input name="sFriend" id="fYes" value="yes" 
+                        type="radio" />
+                        <label for="fNo">No</label>
+                        <input name="sFriend" id="fNo" value="no" 
+                        type="radio" />
+                        <label for="fNA">Not Applicable</label>
+                        <input name="sFriend" id="fNotApplicable" value="not applicable" 
+                        type="radio" />
+                        </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Was this website helpful?</label>
+                    <fieldset class="optGroup">
+                        <label for="cYes">Yes</label>
+                        <input name="oCorrect" id="cYes" value="yes" 
+                        type="radio" />
+                        <label for="cNo">No</label>
+                        <input name="oCorrect" id="cNo" value="no" 
+                        type="radio" />
+                        </fieldset>
+                </div>
+
+            
+            <div class="formRow">
+                <label for="rangeBox"> Rate the overall service <br />
+                (0=poor; 10=great) </label>
+
+                0
+                <input name="serviceRate" id="rangeBox" type="range"
+                value="5" step="1" min="0" max="10"/>
+                10
+            </div>
+
+            <!-- HTML Page 559 Section 7.2 -->
+            <!-- Create a Text Area Box -->
+            
+            <label for="commBox"> Tell us more about your experience </label>
+            <textarea name="custExp" id="commBox"> </textarea>
+            </fieldset>
+
+            <!-- HTML Page 573 -->
+            <!-- Create submit and reset buttons -->
+            <div id="buttons">
+                <input type="submit" value="Submit Registration" />
+                <input type="reset" value="Cancel" />
+            </div> 
+        </form>
+
+    </section>
+    <footer>
+        
+        SoCal Media Solutions &copy; 2024 All Rights Reserved
+    </footer>
+</body>
+
+</html>
