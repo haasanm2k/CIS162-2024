@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Reset Style Sheet for the Pandaisia Chocolates Website
+   Author: Hasan Mohammad
+   Date:  02/27/2024 
+   
+   Filename: pc_reset.css
+
+*/
+
+/* Structural Styles */
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display:block
+} 
+
+
+/* Typographic Styles */
+
+/* To create reset style sheet */
+/* Page HTML 179  */
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+    background: transparent;
+    /* sets the font size equal to the font size of the parent */
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    /* alligns all conetent with the baseline */
+    vertical-align: baseline;
+    /* Adding the border-box style to the reset style rule  */
+    /* Page HTML 199  */
+    box-sizing: border-box;
+}
+
+/* doesn't display markers for unordered lists within navigation lists */
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* doesn't underline hypertext links within navigation lists */
+nav a {
+    text-decoration: none;
+}
+
+/* single spaces all body text*/
+body {
+    line-height: 1;
+}
+
+
+/*  CSS    */
+
+/* HTML and Body Styles */
+
+html {
+    background-color: rgb(98, 55, 11);
+    font-family: Verdana, Geneva, Arial, sans-serif; 	
+ }
+ 
+ body {
+    background-color: rgb(247, 254, 255);  
+ }
+
+
+
+ /* Page Header Styles */
+
+
+body > header > img {
+    /*  display:grid; */
+    display: block;
+    width: 100%;
+ }
+
+ 
+ nav.horizontalNavigation > ul > li {
+    display: block;
+    float: left;
+    width: 16%;
+ }
+
+ /* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+    background-color: rgb(192, 255, 56);
+    font-family: Champagne, cursive;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+ }  
+ 
+ 
+ nav.horizontalNavigation a:link, 
+ nav.horizontalNavigation a:visited {
+    color: rgb(50, 3, 235);
+ }
+ 
+ nav.horizontalNavigation a:hover, 
+ nav.horizontalNavigation a:active {
+    background-color: rgb(11, 234, 85);
+ }   
+
+
+
+
+
+/* Grid Styles for Page Body */
+
+/* HTML Page 215 */
+/* displays the children of the body element within a grid  */
+body {
+    /* creating CSS Grid */
+    display: grid;
+    /* HTML 217 fr is fractional unit */
+    grid-template-columns:  2fr 2fr;
+    
+
+    /* HTML 228 Placing Gris Items by Area  */
+
+    /* Personnel note: This section need to match with page elements to grid areas */
+    grid-template-areas: "header    header"
+                         "intro     intro"
+                         "articles  aside"
+                         "footer    footer";
+
+    /* HTML 233 Set the size of the column gap */
+    grid-column-gap: 10px;
+
+}
+
+
+
+ /* Footer Styles */
+
+footer {
+    color: rgb(7, 7, 5);
+    background-color: rgb(206, 77, 21);
+    font-size: 0.9em;
+    padding: 1em 0;
+    text-align: center;
+ }
+
+
+

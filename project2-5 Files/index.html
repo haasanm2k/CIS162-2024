@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 8th Edition
+        Project 2-4
+        Adding bootstrap accordion and cards features
+
+        https://getbootstrap.com/docs/5.1/components/accordion/
+
+        https://getbootstrap.com/docs/5.1/components/card/#card-groups
+        
+
+        About SoCal Media Solutions Page
+        Author:Hasan Mohammad
+        Date: 03/19/2024  
+    
+        Filename: index.html
+     -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About SoCal Media Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="project2-5-reset.css" rel="stylesheet" />
+    <!--link href="project2-3.css" rel="stylesheet" /-->
+</head>
+
+<body>
+   <header>
+       <img src="socal_logo.png" alt="SoCal Media Solutions" />
+       <nav class="horizontalNavigation">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="network.html">Network</a></li>
+             <li><a href="media.html">Media</a></li>
+             <li><a href="gallery.html">Photos</a></li>
+             <li><a href="galleryCards.html">Cards</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+       </nav>
+       <img src="socal_logo1.gif" alt="SoCal Media Solutions" /> 
+    </header>
+    <article>
+      
+      <div class="accordion" id="accordionExample">
+                 <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           
+                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   Introduction
+                             </button>
+                        </h2>
+                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>SoCal Media Solutions at Southern California</strong> 
+                                        <p>We are the provider of excellent digital broadcast and streaming services.
+                                            <!--code>.accordion-body</code-->
+                                        </p>
+                                        <p>
+                                            We are a company located in Los Angeles, California dedicated to 
+                                            provide media solutions to customers at southern California. 
+                                            These company were founded by and served by certified and 
+                                            professional engineers and inventors. 
+                                            Our company hires only certified engineers who graduated from
+                                            accredited universities in USA.
+                                        </p>
+                                          <!--code>.accordion-body</code-->
+                                    </div>
+                             </div>
+                 </div>
+
+                 <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Principal services provided by SoCal Media Solutions
+                             </button>
+                        </h2>
+                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                         <strong>How can we help you?</strong> 
+
+                                         <dl>
+                                            <dt>Networking</dt>
+                                            <dd>Cisco and Juniper</dd>
+                                            <dt>Inserts</dt>
+                                            <dd>Cue Tones</dd>
+                                            <dt>Broadcast</dt>
+                                            <dd>GE and MyTec</dd>         
+                                            <dt>Media</dt>
+                                            <dd>OTT</dd>
+                                
+                                         </dl>
+                                          <!--code>.accordion-body</code-->
+                                    </div>
+                           </div>
+                 </div>
+
+
+                 <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Additional services provided by SoCal Media Solutions
+                           </button>
+                        </h2>
+                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                           <strong>How can we help you with other projects you need for streaming and broadcasting?</strong> 
+                    
+                                           <dl>
+                                            <dt>FCC Compliance</dt>
+                                            <dd>Quality Standards</dd>
+                                            <dt>Security Compliance<dt>
+                                            <dd>Internet and Cyber Security</dd>
+                                            <dt>Upgrade</dt>
+                                            <dd>Software and Firmware</dd>
+                                            <dt>Project Evaluations</dt>
+                                            <dd>OP Ex vs CAP Ex</dd>
+                                            <dd>and many more evaluations to increase your businees goals.</dd>
+                                            <dt>Risk</dt>
+                                            <dd>Evaluate Engineering Risk</dd>
+                                          
+                                         </dl>
+                                                    
+                                           <!--code>.accordion-body</code-->
+                                    </div>
+                             </div>
+                </div>
+
+
+       </div>       
+                       
+
+
+
+      
+    </article>
+
+    <footer>
+        SoCal Media Solutions &copy; 2024 All Rights Reserved
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
